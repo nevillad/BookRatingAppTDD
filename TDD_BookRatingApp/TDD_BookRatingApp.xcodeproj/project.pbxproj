@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D0C753C23CAC64100BEBA20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C753B23CAC64100BEBA20 /* AppDelegate.swift */; };
+		6D0C753E23CAC64100BEBA20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C753D23CAC64100BEBA20 /* SceneDelegate.swift */; };
+		6D0C754023CAC64100BEBA20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C753F23CAC64100BEBA20 /* ViewController.swift */; };
+		6D0C754323CAC64100BEBA20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C754123CAC64100BEBA20 /* Main.storyboard */; };
+		6D0C754523CAC64400BEBA20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C754423CAC64400BEBA20 /* Assets.xcassets */; };
+		6D0C754823CAC64400BEBA20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C754623CAC64400BEBA20 /* LaunchScreen.storyboard */; };
+		6D0C755323CAC64500BEBA20 /* TDD_BookRatingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C755223CAC64500BEBA20 /* TDD_BookRatingAppTests.swift */; };
+		6D0C755E23CAC64500BEBA20 /* TDD_BookRatingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C755D23CAC64500BEBA20 /* TDD_BookRatingAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D0C754F23CAC64500BEBA20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D0C753023CAC64100BEBA20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D0C753723CAC64100BEBA20;
+			remoteInfo = TDD_BookRatingApp;
+		};
+		6D0C755A23CAC64500BEBA20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D0C753023CAC64100BEBA20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D0C753723CAC64100BEBA20;
+			remoteInfo = TDD_BookRatingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D0C753823CAC64100BEBA20 /* TDD_BookRatingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDD_BookRatingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0C753B23CAC64100BEBA20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6D0C753D23CAC64100BEBA20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6D0C753F23CAC64100BEBA20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D0C754223CAC64100BEBA20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D0C754423CAC64400BEBA20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D0C754723CAC64400BEBA20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D0C754923CAC64400BEBA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0C754E23CAC64500BEBA20 /* TDD_BookRatingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_BookRatingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0C755223CAC64500BEBA20 /* TDD_BookRatingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_BookRatingAppTests.swift; sourceTree = "<group>"; };
+		6D0C755423CAC64500BEBA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0C755923CAC64500BEBA20 /* TDD_BookRatingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_BookRatingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0C755D23CAC64500BEBA20 /* TDD_BookRatingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_BookRatingAppUITests.swift; sourceTree = "<group>"; };
+		6D0C755F23CAC64500BEBA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D0C753523CAC64100BEBA20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0C754B23CAC64500BEBA20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0C755623CAC64500BEBA20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D0C752F23CAC64100BEBA20 = {
+			isa = PBXGroup;
+			children = (
+				6D0C753A23CAC64100BEBA20 /* TDD_BookRatingApp */,
+				6D0C755123CAC64500BEBA20 /* TDD_BookRatingAppTests */,
+				6D0C755C23CAC64500BEBA20 /* TDD_BookRatingAppUITests */,
+				6D0C753923CAC64100BEBA20 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D0C753923CAC64100BEBA20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C753823CAC64100BEBA20 /* TDD_BookRatingApp.app */,
+				6D0C754E23CAC64500BEBA20 /* TDD_BookRatingAppTests.xctest */,
+				6D0C755923CAC64500BEBA20 /* TDD_BookRatingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D0C753A23CAC64100BEBA20 /* TDD_BookRatingApp */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C753B23CAC64100BEBA20 /* AppDelegate.swift */,
+				6D0C753D23CAC64100BEBA20 /* SceneDelegate.swift */,
+				6D0C753F23CAC64100BEBA20 /* ViewController.swift */,
+				6D0C754123CAC64100BEBA20 /* Main.storyboard */,
+				6D0C754423CAC64400BEBA20 /* Assets.xcassets */,
+				6D0C754623CAC64400BEBA20 /* LaunchScreen.storyboard */,
+				6D0C754923CAC64400BEBA20 /* Info.plist */,
+			);
+			path = TDD_BookRatingApp;
+			sourceTree = "<group>";
+		};
+		6D0C755123CAC64500BEBA20 /* TDD_BookRatingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C755223CAC64500BEBA20 /* TDD_BookRatingAppTests.swift */,
+				6D0C755423CAC64500BEBA20 /* Info.plist */,
+			);
+			path = TDD_BookRatingAppTests;
+			sourceTree = "<group>";
+		};
+		6D0C755C23CAC64500BEBA20 /* TDD_BookRatingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C755D23CAC64500BEBA20 /* TDD_BookRatingAppUITests.swift */,
+				6D0C755F23CAC64500BEBA20 /* Info.plist */,
+			);
+			path = TDD_BookRatingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D0C753723CAC64100BEBA20 /* TDD_BookRatingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0C756223CAC64500BEBA20 /* Build configuration list for PBXNativeTarget "TDD_BookRatingApp" */;
+			buildPhases = (
+				6D0C753423CAC64100BEBA20 /* Sources */,
+				6D0C753523CAC64100BEBA20 /* Frameworks */,
+				6D0C753623CAC64100BEBA20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TDD_BookRatingApp;
+			productName = TDD_BookRatingApp;
+			productReference = 6D0C753823CAC64100BEBA20 /* TDD_BookRatingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D0C754D23CAC64500BEBA20 /* TDD_BookRatingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0C756523CAC64500BEBA20 /* Build configuration list for PBXNativeTarget "TDD_BookRatingAppTests" */;
+			buildPhases = (
+				6D0C754A23CAC64500BEBA20 /* Sources */,
+				6D0C754B23CAC64500BEBA20 /* Frameworks */,
+				6D0C754C23CAC64500BEBA20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D0C755023CAC64500BEBA20 /* PBXTargetDependency */,
+			);
+			name = TDD_BookRatingAppTests;
+			productName = TDD_BookRatingAppTests;
+			productReference = 6D0C754E23CAC64500BEBA20 /* TDD_BookRatingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D0C755823CAC64500BEBA20 /* TDD_BookRatingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0C756823CAC64500BEBA20 /* Build configuration list for PBXNativeTarget "TDD_BookRatingAppUITests" */;
+			buildPhases = (
+				6D0C755523CAC64500BEBA20 /* Sources */,
+				6D0C755623CAC64500BEBA20 /* Frameworks */,
+				6D0C755723CAC64500BEBA20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D0C755B23CAC64500BEBA20 /* PBXTargetDependency */,
+			);
+			name = TDD_BookRatingAppUITests;
+			productName = TDD_BookRatingAppUITests;
+			productReference = 6D0C755923CAC64500BEBA20 /* TDD_BookRatingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D0C753023CAC64100BEBA20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Nevil;
+				TargetAttributes = {
+					6D0C753723CAC64100BEBA20 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					6D0C754D23CAC64500BEBA20 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6D0C753723CAC64100BEBA20;
+					};
+					6D0C755823CAC64500BEBA20 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 6D0C753723CAC64100BEBA20;
+					};
+				};
+			};
+			buildConfigurationList = 6D0C753323CAC64100BEBA20 /* Build configuration list for PBXProject "TDD_BookRatingApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D0C752F23CAC64100BEBA20;
+			productRefGroup = 6D0C753923CAC64100BEBA20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D0C753723CAC64100BEBA20 /* TDD_BookRatingApp */,
+				6D0C754D23CAC64500BEBA20 /* TDD_BookRatingAppTests */,
+				6D0C755823CAC64500BEBA20 /* TDD_BookRatingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D0C753623CAC64100BEBA20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0C754823CAC64400BEBA20 /* LaunchScreen.storyboard in Resources */,
+				6D0C754523CAC64400BEBA20 /* Assets.xcassets in Resources */,
+				6D0C754323CAC64100BEBA20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0C754C23CAC64500BEBA20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0C755723CAC64500BEBA20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D0C753423CAC64100BEBA20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0C754023CAC64100BEBA20 /* ViewController.swift in Sources */,
+				6D0C753C23CAC64100BEBA20 /* AppDelegate.swift in Sources */,
+				6D0C753E23CAC64100BEBA20 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0C754A23CAC64500BEBA20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0C755323CAC64500BEBA20 /* TDD_BookRatingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0C755523CAC64500BEBA20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0C755E23CAC64500BEBA20 /* TDD_BookRatingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D0C755023CAC64500BEBA20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D0C753723CAC64100BEBA20 /* TDD_BookRatingApp */;
+			targetProxy = 6D0C754F23CAC64500BEBA20 /* PBXContainerItemProxy */;
+		};
+		6D0C755B23CAC64500BEBA20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D0C753723CAC64100BEBA20 /* TDD_BookRatingApp */;
+			targetProxy = 6D0C755A23CAC64500BEBA20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D0C754123CAC64100BEBA20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D0C754223CAC64100BEBA20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D0C754623CAC64400BEBA20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D0C754723CAC64400BEBA20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D0C756023CAC64500BEBA20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6D0C756123CAC64500BEBA20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D0C756323CAC64500BEBA20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDD_BookRatingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chg.app.bookrating.TDD-BookRatingApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D0C756423CAC64500BEBA20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDD_BookRatingApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chg.app.bookrating.TDD-BookRatingApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6D0C756623CAC64500BEBA20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDD_BookRatingAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chg.app.bookrating.TDD-BookRatingAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD_BookRatingApp.app/TDD_BookRatingApp";
+			};
+			name = Debug;
+		};
+		6D0C756723CAC64500BEBA20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDD_BookRatingAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chg.app.bookrating.TDD-BookRatingAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD_BookRatingApp.app/TDD_BookRatingApp";
+			};
+			name = Release;
+		};
+		6D0C756923CAC64500BEBA20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDD_BookRatingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chg.app.bookrating.TDD-BookRatingAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TDD_BookRatingApp;
+			};
+			name = Debug;
+		};
+		6D0C756A23CAC64500BEBA20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TDD_BookRatingAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chg.app.bookrating.TDD-BookRatingAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TDD_BookRatingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D0C753323CAC64100BEBA20 /* Build configuration list for PBXProject "TDD_BookRatingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0C756023CAC64500BEBA20 /* Debug */,
+				6D0C756123CAC64500BEBA20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D0C756223CAC64500BEBA20 /* Build configuration list for PBXNativeTarget "TDD_BookRatingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0C756323CAC64500BEBA20 /* Debug */,
+				6D0C756423CAC64500BEBA20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D0C756523CAC64500BEBA20 /* Build configuration list for PBXNativeTarget "TDD_BookRatingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0C756623CAC64500BEBA20 /* Debug */,
+				6D0C756723CAC64500BEBA20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D0C756823CAC64500BEBA20 /* Build configuration list for PBXNativeTarget "TDD_BookRatingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0C756923CAC64500BEBA20 /* Debug */,
+				6D0C756A23CAC64500BEBA20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D0C753023CAC64100BEBA20 /* Project object */;
+}
