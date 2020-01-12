@@ -13,8 +13,9 @@
 		6D0C754323CAC64100BEBA20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C754123CAC64100BEBA20 /* Main.storyboard */; };
 		6D0C754523CAC64400BEBA20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C754423CAC64400BEBA20 /* Assets.xcassets */; };
 		6D0C754823CAC64400BEBA20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C754623CAC64400BEBA20 /* LaunchScreen.storyboard */; };
-		6D0C755323CAC64500BEBA20 /* TDD_BookRatingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C755223CAC64500BEBA20 /* TDD_BookRatingAppTests.swift */; };
 		6D0C755E23CAC64500BEBA20 /* TDD_BookRatingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C755D23CAC64500BEBA20 /* TDD_BookRatingAppUITests.swift */; };
+		6D0C756C23CADAFC00BEBA20 /* BookStructTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C756B23CADAFC00BEBA20 /* BookStructTest.swift */; };
+		6D0C756F23CADB9900BEBA20 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C756E23CADB9900BEBA20 /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +45,12 @@
 		6D0C754723CAC64400BEBA20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D0C754923CAC64400BEBA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D0C754E23CAC64500BEBA20 /* TDD_BookRatingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_BookRatingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D0C755223CAC64500BEBA20 /* TDD_BookRatingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_BookRatingAppTests.swift; sourceTree = "<group>"; };
 		6D0C755423CAC64500BEBA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D0C755923CAC64500BEBA20 /* TDD_BookRatingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDD_BookRatingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0C755D23CAC64500BEBA20 /* TDD_BookRatingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_BookRatingAppUITests.swift; sourceTree = "<group>"; };
 		6D0C755F23CAC64500BEBA20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0C756B23CADAFC00BEBA20 /* BookStructTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStructTest.swift; sourceTree = "<group>"; };
+		6D0C756E23CADB9900BEBA20 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		6D0C753A23CAC64100BEBA20 /* TDD_BookRatingApp */ = {
 			isa = PBXGroup;
 			children = (
+				6D0C756D23CADB8E00BEBA20 /* Model */,
 				6D0C753B23CAC64100BEBA20 /* AppDelegate.swift */,
 				6D0C753D23CAC64100BEBA20 /* SceneDelegate.swift */,
 				6D0C753F23CAC64100BEBA20 /* ViewController.swift */,
@@ -113,8 +116,8 @@
 		6D0C755123CAC64500BEBA20 /* TDD_BookRatingAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D0C755223CAC64500BEBA20 /* TDD_BookRatingAppTests.swift */,
 				6D0C755423CAC64500BEBA20 /* Info.plist */,
+				6D0C756B23CADAFC00BEBA20 /* BookStructTest.swift */,
 			);
 			path = TDD_BookRatingAppTests;
 			sourceTree = "<group>";
@@ -126,6 +129,14 @@
 				6D0C755F23CAC64500BEBA20 /* Info.plist */,
 			);
 			path = TDD_BookRatingAppUITests;
+			sourceTree = "<group>";
+		};
+		6D0C756D23CADB8E00BEBA20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C756E23CADB9900BEBA20 /* Book.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +210,7 @@
 					};
 					6D0C754D23CAC64500BEBA20 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 						TestTargetID = 6D0C753723CAC64100BEBA20;
 					};
 					6D0C755823CAC64500BEBA20 = {
@@ -259,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D0C756F23CADB9900BEBA20 /* Book.swift in Sources */,
 				6D0C754023CAC64100BEBA20 /* ViewController.swift in Sources */,
 				6D0C753C23CAC64100BEBA20 /* AppDelegate.swift in Sources */,
 				6D0C753E23CAC64100BEBA20 /* SceneDelegate.swift in Sources */,
@@ -269,7 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D0C755323CAC64500BEBA20 /* TDD_BookRatingAppTests.swift in Sources */,
+				6D0C756C23CADAFC00BEBA20 /* BookStructTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +482,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TDD_BookRatingAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
@@ -479,6 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.chg.app.bookrating.TDD-BookRatingAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDD_BookRatingApp.app/TDD_BookRatingApp";
@@ -490,6 +505,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TDD_BookRatingAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
