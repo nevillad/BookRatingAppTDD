@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Book:Codable {
+struct Book:Codable, Equatable {
     let title: String
     let author: String
     var rating: Int?
@@ -17,6 +17,7 @@ struct Book:Codable {
     let country: String?
     let language: String?
     let link: String?
+    
     
     init(title: String, author:String, rating: Int? = nil, year: Int? = nil, pages:Int? = nil, country:String? = nil, language: String? = nil, link: String? = nil) {
         self.title = title
@@ -28,4 +29,17 @@ struct Book:Codable {
         self.language = language
         self.link = link
     }
+    
+}
+
+func==(lhs:Book, rhs:Book) -> Bool{
+    if lhs.title != rhs.title {
+        return false
+    }
+    
+    if lhs.author != rhs.author {
+        return false
+    }
+    
+    return true
 }
