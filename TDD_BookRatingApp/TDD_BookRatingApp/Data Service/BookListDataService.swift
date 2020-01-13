@@ -20,7 +20,14 @@ class BookListDataService: NSObject, UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let bookManager = bookManager else {
+            fatalError()
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "bookCellID", for: indexPath) as! BookCell
+        cell.configBookCell(book: bookManager.bookAtIndex(index: indexPath.row))
+        
         return  cell
     }
     

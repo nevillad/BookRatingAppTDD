@@ -20,5 +20,9 @@ class BookCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func configBookCell(book: Book) {
+        
+    }
 
 }

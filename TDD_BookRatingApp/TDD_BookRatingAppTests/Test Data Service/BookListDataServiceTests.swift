@@ -14,6 +14,8 @@ class BookListDataServiceTests: XCTestCase {
     var sut: BookListDataService!
     var bookListTableView: UITableView!
     var bookListVC: BookListViewController!
+    var tableViewMock: TableViewMock!
+    
     let book1 = Book(title: "Buddenbrooks", author: "Thomas Mann", rating: 7, year: 1901, pages: 736, country: "Germany", language: "German", link: "https://en.wikipedia.org/wiki/Buddenbrooks")
        
        let book2 = Book(title: "The Magic Mountain", author: "Thomas Mann", rating: 4, year: 1924, pages: 720, country: "Germany", language: "German", link: "https://en.wikipedia.org/wiki/The_Magic_Mountain")
@@ -27,6 +29,7 @@ class BookListDataServiceTests: XCTestCase {
         sut = BookListDataService()
         sut.bookManager  = BookManager(booksArray: [book1, book2, book3, book4])
         
+        tableViewMock = TableViewMock.initMock(dataSource: sut)
         bookListVC = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "BookListViewControllerID") as! BookListViewController)
         _ = bookListVC.view
         
@@ -60,18 +63,21 @@ class BookListDataServiceTests: XCTestCase {
     }
     
     func testCell_ShouldDequeueCell() {
-        let mock = TableViewMock()
-        mock.dataSource = sut
-        mock.register(BookCell.self, forCellReuseIdentifier: "bookCellID")
-        sut.bookManager?.sortBooksArray()
-        mock.reloadData()
         
-        _ = mock.cellForRow(at: IndexPath(item: 0, section: 0))
-        XCTAssertTrue(mock.cellDequeuedPropely)
+        sut.bookManager?.sortBooksArray()
+        tableViewMock.reloadData()
+        
+        _ = tableViewMock.cellForRow(at: IndexPath(item: 0, section: 0))
+        XCTAssertTrue(tableViewMock.cellDequeuedPropely)
         
     }
         
-    
+    func testCell_SetsCellData() {
+        sut.bookManager?.sortBooksArray()
+        tableViewMock.reloadData()
+        let cell = tableViewMock.cellForRow(at: IndexPath(row: 0, section: 0)) as! BookCellMock
+        XCTAssertEqual(cell.bookData, book4)
+    }
         
 
 }
