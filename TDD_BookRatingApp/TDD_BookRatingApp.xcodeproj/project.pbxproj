@@ -23,6 +23,7 @@
 		6D2C61F323CCDA920062C093 /* BookListDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2C61F223CCDA920062C093 /* BookListDataServiceTests.swift */; };
 		6D2C61F923CCE8830062C093 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2C61F823CCE8830062C093 /* BookCell.swift */; };
 		6D2C61FC23CCF3CF0062C093 /* MockExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2C61FB23CCF3CF0062C093 /* MockExtensions.swift */; };
+		6D2C61FF23CCFC4C0062C093 /* BookCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2C61FE23CCFC4C0062C093 /* BookCellTests.swift */; };
 		6DB3741423CC93BF00A7544B /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = 6DB3741323CC93BF00A7544B /* Books.json */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		6D2C61F223CCDA920062C093 /* BookListDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListDataServiceTests.swift; sourceTree = "<group>"; };
 		6D2C61F823CCE8830062C093 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		6D2C61FB23CCF3CF0062C093 /* MockExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExtensions.swift; sourceTree = "<group>"; };
+		6D2C61FE23CCFC4C0062C093 /* BookCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCellTests.swift; sourceTree = "<group>"; };
 		6DB3741323CC93BF00A7544B /* Books.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Books.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 		6D0C755123CAC64500BEBA20 /* TDD_BookRatingAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				6D2C61FD23CCFC2D0062C093 /* Test Cell */,
 				6D2C61FA23CCF3A00062C093 /* Mocks */,
 				6D2C61F123CCDA750062C093 /* Test Data Service */,
 				6D2C61E923CCD1160062C093 /* Test Controllers */,
@@ -209,6 +212,14 @@
 				6D2C61FB23CCF3CF0062C093 /* MockExtensions.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		6D2C61FD23CCFC2D0062C093 /* Test Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6D2C61FE23CCFC4C0062C093 /* BookCellTests.swift */,
+			);
+			path = "Test Cell";
 			sourceTree = "<group>";
 		};
 		6DB3741223CC93A500A7544B /* Assets */ = {
@@ -366,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D2C61FF23CCFC4C0062C093 /* BookCellTests.swift in Sources */,
 				6D0C757323CB1CF500BEBA20 /* BookManagerTest.swift in Sources */,
 				6D2C61ED23CCD2AD0062C093 /* BookListViewControllerTests.swift in Sources */,
 				6D2C61F323CCDA920062C093 /* BookListDataServiceTests.swift in Sources */,

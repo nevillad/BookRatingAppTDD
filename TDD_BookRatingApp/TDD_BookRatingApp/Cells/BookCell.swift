@@ -22,7 +22,8 @@ class BookCell: UITableViewCell {
     }
     
     func configBookCell(book: Book) {
-        
+        self.textLabel?.text = book.title
+        self.detailTextLabel?.text = book.author
     }
 
 }
