@@ -10,6 +10,7 @@ import XCTest
 
 @testable import TDD_BookRatingApp
 
+
 class BookStructTest: XCTestCase {
 
     override func setUp() {
@@ -20,7 +21,7 @@ class BookStructTest: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    
+    //MARK: Initialization
     func testInit_BookWithTitleAndAuthor() {
         let testBook = Book(title: "The Divine Comedy", author: "Dante Alighieri")
         XCTAssertNotNil(testBook)
@@ -63,5 +64,18 @@ class BookStructTest: XCTestCase {
            XCTAssertNotNil(testBook)
            XCTAssertEqual(testBook.link, "https://en.wikipedia.org/wiki/Things_Fall_Apart\n")
        }
+    
+    //MARK: Equatable
+    func testEquatable_ReturnsNotEqualForDifferentTitles() {
+        let book1 = Book(title: "Buddenbrooks", author: "Thomas Mann")
+        let book2 = Book(title: "The Magic Mountain", author: "Thomas Mann")
+        XCTAssertNotEqual(book1, book2)
+    }
+    
+    func testEquatable_ReturnsNotEqualForDifferentAuthor() {
+        let book1 = Book(title: "Buddenbrooks", author: "Thomas Mann")
+        let book2 = Book(title: "Buddenbrooks", author: "Michel de Montaigne")
+        XCTAssertNotEqual(book1, book2)
+    }
     
 }
