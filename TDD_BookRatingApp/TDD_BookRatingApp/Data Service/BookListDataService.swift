@@ -10,7 +10,11 @@ import UIKit
 
 class BookListDataService: NSObject, UITableViewDataSource,UITableViewDelegate {
     
-    var bookManager: BookManager?
+    var bookManager: BookManager? {
+        didSet {
+            print("Changess")
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let bookManager = bookManager else {

@@ -35,7 +35,9 @@ class BookCellTests: XCTestCase {
     func testCell_Config_ShouldSetsLableToBookData() {
         let cell = tableView.dequeueReusableCell(withIdentifier: "bookCellID", for: IndexPath(row: 0, section: 0)) as! BookCell
         cell.configBookCell(book:bookSample)
-        XCTAssertEqual(cell.textLabel?.text, "Mahabharata")
-        XCTAssertEqual(cell.detailTextLabel?.text, "Vyasa")
+        XCTAssertEqual(cell.titleLabel?.text, "Mahabharata")
+        XCTAssertEqual(cell.authorLabel?.text, "Author: Vyasa")
+        XCTAssertEqual(cell.languageAndCountryLabel?.text, "Sanskrit, India")
+        XCTAssertEqual(cell.ratingLabel?.text, "Rating: 9/10")
     }
 }

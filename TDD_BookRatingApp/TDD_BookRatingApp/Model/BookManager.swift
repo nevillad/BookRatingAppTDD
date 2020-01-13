@@ -7,11 +7,17 @@
 //
 
 import Foundation
+protocol BookManagerDelegate {
+    func refreshData()
+}
 
 class BookManager {
+    var delegate:BookManagerDelegate?
+    
     var booksCount: Int { return booksArray.count }
     
     private var booksArray:[Book] = [Book]()
+    private var gameTimer: Timer?
     
     func loadData() {
         if let path = Bundle.main.path(forResource: "Books", ofType: "json") {
@@ -37,6 +43,23 @@ class BookManager {
     func bookAtIndex(index:Int) -> Book {
         return self.booksArray[index]
     }
+    
+    func startTimer() {
+        gameTimer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(randomOrdering), userInfo: nil, repeats: true)
+    }
+    
+    func stopTimer() {
+        gameTimer?.invalidate()
+    }
+    
+    @objc func randomOrdering() {
+        let randomIndex = Int.random(in: 0..<self.booksArray.count)
+        let randomRating = Float.random(in: 1...9)
+        self.booksArray[randomIndex].rating = Int(randomRating)
+        self.sortBooksArray()
+        delegate?.refreshData()
+    }
+    
 }
 
 extension BookManager {

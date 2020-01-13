@@ -9,7 +9,12 @@
 import UIKit
 
 class BookCell: UITableViewCell {
-
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var languageAndCountryLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,8 +27,16 @@ class BookCell: UITableViewCell {
     }
     
     func configBookCell(book: Book) {
-        self.textLabel?.text = book.title
-        self.detailTextLabel?.text = book.author
+        self.titleLabel?.text = book.title
+        self.authorLabel?.text = "Author: \(book.author)"
+        self.languageAndCountryLabel.text = "\(book.language ?? ""), \(book.country ?? "")"
+        if let rating = book.rating {
+            self.ratingLabel.text = "Rating: \(rating)/10"
+        }else {
+            self.ratingLabel.text = "Rating: N/A"
+        }
     }
 
+    
+     
 }
