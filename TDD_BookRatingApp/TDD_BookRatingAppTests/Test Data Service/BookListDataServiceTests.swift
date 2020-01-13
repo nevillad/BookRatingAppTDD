@@ -13,7 +13,7 @@ class BookListDataServiceTests: XCTestCase {
 
     var sut: BookListDataService!
     var bookListTableView: UITableView!
-    
+    var bookListVC: BookListViewController!
     let book1 = Book(title: "Buddenbrooks", author: "Thomas Mann", rating: 7, year: 1901, pages: 736, country: "Germany", language: "German", link: "https://en.wikipedia.org/wiki/Buddenbrooks")
        
        let book2 = Book(title: "The Magic Mountain", author: "Thomas Mann", rating: 4, year: 1924, pages: 720, country: "Germany", language: "German", link: "https://en.wikipedia.org/wiki/The_Magic_Mountain")
@@ -25,11 +25,16 @@ class BookListDataServiceTests: XCTestCase {
     override func setUp() {
         super.setUp()
         sut = BookListDataService()
-        bookListTableView = UITableView()
+        sut.bookManager  = BookManager(booksArray: [book1, book2, book3, book4])
+        
+        bookListVC = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "BookListViewControllerID") as! BookListViewController)
+        _ = bookListVC.view
+        
+        bookListTableView = bookListVC.bookListTableView
         bookListTableView.dataSource = sut
         bookListTableView.delegate = sut
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
+
     }
 
     override func tearDown() {
@@ -45,6 +50,30 @@ class BookListDataServiceTests: XCTestCase {
         XCTAssertEqual(sections, 1)
     }
     
-//    func testTableViewSections_SectionOne_ReturnBooks
+    //MARK: Cells
+    func testCell_RowAtIndex_ReturnsMovieCell() {
+        sut.bookManager?.sortBooksArray()
+        bookListTableView.reloadData()
+        
+        let cellQueried = bookListTableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        XCTAssertTrue(cellQueried is BookCell)
+    }
+    
+    func testCell_ShouldDequeueCell() {
+        let mock = TableViewMock()
+        mock.dataSource = sut
+        mock.register(BookCell.self, forCellReuseIdentifier: "bookCellID")
+        sut.bookManager?.sortBooksArray()
+        mock.reloadData()
+        
+        _ = mock.cellForRow(at: IndexPath(item: 0, section: 0))
+        XCTAssertTrue(mock.cellDequeuedPropely)
+        
+    }
+        
+    
+        
 
 }
+
+

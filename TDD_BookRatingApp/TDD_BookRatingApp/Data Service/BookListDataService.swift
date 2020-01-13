@@ -20,7 +20,8 @@ class BookListDataService: NSObject, UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "bookCellID", for: indexPath) as! BookCell
+        return  cell
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
