@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Book List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TDD_BookRatingApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookListViewControllerID" id="BYZ-38-t0r" customClass="BookListViewController" customModule="TDD_BookRatingApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,8 +65,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bookListTableView" destination="XDX-mi-4EY" id="7eb-78-Vbs"/>
+                        <outlet property="dataService" destination="BOI-Xa-Wzm" id="vmt-fm-ELG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="BOI-Xa-Wzm" userLabel="Book List Data Service" customClass="BookListDataService" customModule="TDD_BookRatingApp" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
